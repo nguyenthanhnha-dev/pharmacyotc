@@ -1,0 +1,9 @@
+<mat-grid-list [cols]="cols | async" gutterSize="10px" rowHeight="8em">
+  <mat-grid-tile *ngFor="let category of categories">
+    <img [src]="category.imageURL"/>
+    <!--
+    {{ category.name }}
+    Image: {{ category.imageURL }}
+    -->
+  </mat-grid-tile>
+</mat-grid-list>
